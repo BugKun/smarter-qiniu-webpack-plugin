@@ -38,7 +38,9 @@ module.exports = {
   secretKey: 'qiniu secret key', // required
   bucket: 'demo', // required
   bucketDomain: 'https://domain.bkt.clouddn.com', // required
-  matchFiles: ['!*.html', '!*.map'],
+  exclude(path) {
+    return /logo.*png/.test(path)
+  },
   batch: 10,
   mutilThread: 8,
   root: '/static',
