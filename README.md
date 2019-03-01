@@ -18,12 +18,12 @@ npm install --save-dev smarter-qiniu-webpack-plugin
 **webpack.config.js**
 
 ```Javascript
-const smarterQiniuWebpackPlugin = require('smarter-qiniu-webpack-plugin');
+const SmarterQiniuWebpackPlugin = require('smarter-qiniu-webpack-plugin');
 
 module.exports = {
   // ... Webpack 相关配置
   plugins: [
-    new smarterQiniuWebpackPlugin()
+    new SmarterQiniuWebpackPlugin()
   ]
 }
 ```

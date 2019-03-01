@@ -4,7 +4,7 @@
     MiniCssExtractPlugin = require("mini-css-extract-plugin"),
     OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin"),
     TerserPlugin = require('terser-webpack-plugin'),
-    smarterQiniuPlugin = require("../../src/index"),
+    SmarterQiniuPlugin = require("../../src/index"),
     CleanWebpackPlugin = require('clean-webpack-plugin');
 
 
@@ -32,7 +32,7 @@ module.exports = {
     },
     plugins: [
         ...webpackBaseConfig.plugins,
-        new smarterQiniuPlugin(),
+        new SmarterQiniuPlugin(),
         new HashedModuleIdsPlugin(),
         new MiniCssExtractPlugin({
             filename: 'build/css/[name].[contenthash:6].css'
