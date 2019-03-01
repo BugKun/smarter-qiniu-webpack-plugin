@@ -4,4 +4,4 @@ npm-debug.log
 *.map
 *.rb
 .git
-.qiniu_config.js
+example/static

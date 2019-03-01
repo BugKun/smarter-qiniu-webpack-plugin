@@ -5,5 +5,5 @@ npm-debug.log
 *.map
 *.rb
 .gitignore
-.qiniu_config.js
+example/static
 package-lock.json
