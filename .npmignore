@@ -1,0 +1,9 @@
+.git
+.idea
+node_modules
+npm-debug.log
+*.map
+*.rb
+.gitignore
+.qiniu_config.js
+package-lock.json
